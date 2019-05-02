@@ -7,10 +7,12 @@
     "nodemon": "1.18.3",
     "pg": "7.4.3",
     "redis": "2.8.0",
-    "uuid": "^3.3.2"
+    "uuid": "^3.3.2",
+    "validator": "^10.11.0"
   },
   "scripts": {
     "dev": "nodemon",
-    "start": "node index.js"
+    "start": "node index.js",
+    "test": "jest"
   }
 }

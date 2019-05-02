@@ -6,7 +6,7 @@ const helmet = require('helmet')
 const bodyParser = require('body-parser');
 const cors = require('cors');
 const productsRepo = require('./persistence/pgProduct')
-const products = require('./routes/products')(new productsRepo())
+const products = require('./routes/Products/index')(new productsRepo())
 const app = express();
 app.use(helmet())
 app.use(cors());

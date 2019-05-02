@@ -27,6 +27,7 @@ class pgProduct extends ProductsRepo {
   }
 
   async save(description, price) {
+   
     try {
       const query = `
       INSERT INTO products(id,description,price) VALUES($1,$2,$3)
